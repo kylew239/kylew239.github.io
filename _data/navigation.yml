@@ -2,5 +2,5 @@
 main:
   - title: "About me"
     url: /about_me/
-  # - title: "Resume"
-  #   url: /year-archive/
+  - title: "Resume"
+    url: https://raw.githubusercontent.com/kylew239/portfolio/master/assets/KyleWang-Resume.pdf
