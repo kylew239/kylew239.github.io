@@ -16,32 +16,19 @@ gallery_combat_30:
     image_path: /assets/images/combat30/machining.jpg
     alt: "Machining the Robot"
     title: "Machining the Robot"
-# gallery7529:
-#   - url: /assets/images/7529-1.jpg
-#     image_path: /assets/images/7529-1.jpg
-#     alt: "placeholder image 1"
-#     title: "Image 1 title caption"
-#   - url: /assets/images/7529-2.jpg
-#     image_path: /assets/images/7529-2.jpg
-#     alt: "placeholder image 2"
-#     title: "Image 2 title caption"
-#   - url: /assets/images/7529-3.jpg
-#     image_path: /assets/images/7529-3.jpg
-#     alt: "placeholder image 3"
-#     title: "Image 3 title caption"
-# gallery7594:
-#   - url: /assets/images/7594-1.jpg
-#     image_path: /assets/images/7594-1.jpg
-#     alt: "placeholder image 1"
-#     title: "Image 1 title caption"
-#   - url: /assets/images/7594-2.jpg
-#     image_path: /assets/images/7594-2.jpg
-#     alt: "placeholder image 2"
-#     title: "Image 2 title caption"
-#   - url: /assets/images/7594-3.jpg
-#     image_path: /assets/images/7594-3.jpg
-#     alt: "placeholder image 3"
-#     title: "Image 3 title caption"
+gallery_ftc:
+  - url: /assets/images/ftc/16_17.jpg
+    image_path: /assets/images/ftc/16_17.jpg
+    alt: "Robot 2016-17"
+    title: "Robot 2016-17"
+  - url: /assets/images/ftc/17_18.jpg
+    image_path: /assets/images/ftc/17_18.jpg
+    alt: "Robot 2017-18"
+    title: "Robot 2017-18"
+  - url: /assets/images/ftc/18_19.jpg
+    image_path: /assets/images/ftc/18_19.jpg
+    alt: "Robot 2018-19"
+    title: "Robot 2018-19"
 ---
 I am a current M.S Robotics student at Northwetsern University. I graduated from Case Western Reserve University in 2023 with a Bachelor's Degree in Electrical Engineering. My interest in robotics started in high school, when I participated in the FIRST Tech Challenge Robotics Competition. I spent my undergraduate career taking robotics-related courses while participating in CWRU robotics teams. After that, I decided to pursue a Master's degree in Robotics to learn more about the industry and develop my skills. Some of my current robotics interests include swarms, prosthetics, and drones. I am currently seeking summer internships and full-time positions in robotics, and I'm excited to enter the industry and explore robotics projects.
 
@@ -57,6 +44,16 @@ In the 2021-22 school year, I participated in the National Robotics Competition 
 
 ### FIRST Tech Challenge Team 11697
 
+During 9th grade in high school, my friends and I became interested in robotics, and we wanted to explore the field. We had a unique opportunity, since a family friend used to coach a different FIRST robotics team. We reached out, and we ended up founding FTC Team 11697. Throughout highschool, I had the privelage of being a part of this team as it grew. Although we started in the 2016-17 competition season, we quickly improved. 
+
+In the 2017-18 season, we managed to make it to the NJ State Competition. Since then, the team has consistently made it to the State competition.
+In the 2018-19 season, we improved significantly and made it to the Worlds competition in Detroit. Although our placement at Worlds wasn't great, it was still a great accomplishment for us, and we learned a lot about robotics and we met many different accomplished teams.
+
+Unfortunately, the 2019-20 season was cut short due to the pandemic. This was also my last year in highschool and on the team. However, I did stay in touch with the team during college, and I acted as a mentor to them.
+
+{% include gallery id="gallery_ftc" %}
+
+
 ## Employment and Professional Experiences
 <table>
   <tbody>
@@ -68,7 +65,7 @@ In the 2021-22 school year, I participated in the National Robotics Competition 
       <td style = "border-bottom-width:0;"></td>
       <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/viscofan.png" alt="viscofan" width="70"></td>
       <td style="border-bottom-width:0;">
-        <strong>Viscofan</strong> <br>6/2022 - 08/2022 <br> 05/2021 - 08/2021 <br> Electrical Engineer Intern
+        <strong>Viscofan</strong> <br>06/2022 - 08/2022 <br> 05/2021 - 08/2021 <br> Electrical Engineer Intern
       </td>
       <td style = "border-bottom-width:0;"></td>
       <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/cwru.jpeg" alt="cwru" width="70"></td>
