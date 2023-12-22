@@ -3,6 +3,19 @@ permalink: /about_me/
 title: "About me"
 toc: false
 classes: wide
+sidebar:
+  - title: "Page Navigation"
+  - section: "Prior Robotics Experiences"
+    url: /about_me/#prior-robotics-experiences
+  - text: "CWRU Robotics Team"
+    url: /about_me/#cwru-robotics-team
+  - text: "First Tech Challenge"
+    url: /about_me/#first-tech-challenge-team-11697
+  - section: "Employment and Professional Experiences"
+    url: /about_me/#employment-and-professional-experiences
+  - section: "Education"
+    url: /about_me/#education
+
 gallery_combat_30:
   - url: /assets/images/combat30/cad.png
     image_path: /assets/images/combat30/cad.png
@@ -16,6 +29,11 @@ gallery_combat_30:
     image_path: /assets/images/combat30/machining.jpg
     alt: "Machining the Robot"
     title: "Machining the Robot"
+gallery_combat_nrc:
+  - url: /assets/images/nrc_combat_2022.jpg
+    image_path: /assets/images/nrc_combat_2022.jpg
+    alt: "Robot CAD"
+    title: "Robot CAD"
 gallery_ftc:
   - url: /assets/images/ftc/16_17.jpg
     image_path: /assets/images/ftc/16_17.jpg
@@ -39,11 +57,9 @@ In the 2022-2023 school year, I became the co-lead for the Combat team. We parti
 
 
 In the 2021-22 school year, I participated in the National Robotics Competition (NRC) Combat team, where we designed a full body spinner robot consisting of a flexible 3D printed chassis with a three omni wheel drivetrain. Our weapon was a beyblade inspired aluminum ring around the robot that was attached to the frame with a polycarbonate wheel on the top. Due to COVID-19 complications, this was the first time this team competed in a few years, and everyone on the team was new. We ended up placing in the top 8 at the NRC Combat Post-secondary Division.
-
-<br><img src="{{site.baseurl}}/assets/images/nrc_combat_2022.jpg" />
+{% include gallery id="gallery_combat_nrc" %}
 
 ### FIRST Tech Challenge Team 11697
-
 During 9th grade in high school, my friends and I became interested in robotics, and we wanted to explore the field. We had a unique opportunity, since a family friend used to coach a different FIRST robotics team. We reached out, and we ended up founding FTC Team 11697. Throughout highschool, I had the privelage of being a part of this team as it grew. Although we started in the 2016-17 competition season, we quickly improved. 
 
 In the 2017-18 season, we managed to make it to the NJ State Competition. Since then, the team has consistently made it to the State competition.
