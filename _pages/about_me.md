@@ -29,6 +29,7 @@ gallery_combat_30:
     image_path: /assets/images/combat30/machining.jpg
     alt: "Machining the Robot"
     title: "Machining the Robot"
+
 gallery_combat_nrc:
   - url: /assets/images/nrc_combat_2022.jpg
     image_path: /assets/images/nrc_combat_2022.jpg

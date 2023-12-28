@@ -9,10 +9,10 @@
         {% endif %}
         {% if s.title %}<h3 style="margin-bottom: 0;">{{ s.title }}</h3>{% endif %}
         {% if s.section %}
-          <li style="font-size: 20px;"><a style="color:white; text-decoration: none;" href="{{ s.url | relative_url }}">{{ s.section }}</a></li>
+          <li style="font-size: 20px;"><a style="color:black; text-decoration: none;" href="{{ s.url | relative_url }}">{{ s.section }}</a></li>
         {% endif %}
         {% if s.text %}
-          <li><ul style="font-size: 23px;"><a style="color:white; text-decoration: none;" href="{{ s.url | relative_url }}">{{ s.text | markdownify }}</a></ul></li>
+          <li><ul style="font-size: 23px;"><a style="color:black; text-decoration: none;" href="{{ s.url | relative_url }}">{{ s.text | markdownify }}</a></ul></li>
         {% endif %}
         {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
       {% endfor %}
