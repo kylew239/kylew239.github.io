@@ -44,7 +44,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -67,7 +67,7 @@
 /* remove border*/
 .page__content {
   .archive__item-title {
-    margin-top: 1em;
+    margin-top: em;
     border-bottom: none;
   }
 }
@@ -150,11 +150,11 @@
 }
 
 .grid__item {
-  margin-bottom: 2em;
+  margin-bottom: em;
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    width: span(4 of 10);
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -196,6 +196,21 @@
     }
   }
 
+  @include breakpoint($large) {
+
+    width: span(4 of 12); // Keeps 3 items per row on large screens
+
+    &:nth-child(3n + 1) {
+      clear: both;
+      margin-left: 0; // No left margin for the first item in the row
+    }
+
+    // 2nd and 3rd items in the row have a left margin
+    &:nth-child(3n + 2), &:nth-child(3n + 3) {
+      clear: none;
+      margin-left: gutter(1 of 12); 
+  }}
+
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
@@ -229,7 +244,7 @@
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      max-height: 170px;
     }
   }
 }

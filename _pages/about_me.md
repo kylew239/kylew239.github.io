@@ -77,7 +77,7 @@ Unfortunately, the 2019-20 season was cut short due to the pandemic. This was al
     <tr>
       <td style = "border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/cleanrlife.jpeg" alt="cleanr" width="70"></td>
       <td style = "border-bottom-width:0;">
-        <strong>Cleanr</strong> <br> 03/2023 - 08/2023 <br> Engineering Intern
+        <strong>Cleanr</strong> <br> 03/2023 - 08/2023 <br> Innovation Engineer
       </td>
       <td style = "border-bottom-width:0;"></td>
       <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/viscofan.png" alt="viscofan" width="70"></td>
