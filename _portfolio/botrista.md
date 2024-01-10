@@ -5,6 +5,16 @@ key: 4
 excerpt: "Trajectory planning, Object manipulation, ROS2, Moveit, OpenCV"
 header:
   teaser: /assets/gifs/botrista.gif
+sidebar:
+  - title: "Page Navigation"
+  - section: "Video Demo"
+    url: /portfolio/botrista/#video-demo
+  - section: "Moveit Wrapper"
+    url: /portfolio/botrista/#moveit-wrapper
+  - section: "AprilTags"
+    url: /portfolio/botrista/#apriltags
+  - section: "Handle Detection"
+    url: /portfolio/botrista/#handle-detection
 ---
 This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. It uses computer vision and AprilTags to detect where each object is and how to grasp the object, and it uses Moveit2 to plan the trajectories.
 
@@ -44,8 +54,10 @@ AprilTags were used for localization. A camera was mounted on the ceiling so tha
 
 
 ## Handle Detection
-When picking up an object, the robot arm will first move above the AprilTag associated with that object. At that point, the camera mounted onto the arm will search for the handle. This was done by attaching blue and green tape to the handle, and using computer vision to find the handle and the orientation needed.\
+When picking up an object, the robot arm will first move above the AprilTag associated with that object. At that point, the camera mounted onto the arm will search for the handle. This was done by attaching blue and green tape to the handle, and using computer vision to find the handle and the orientation needed.
+
 ![Handle]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/handle.png)
 
-The image below depicts what the camera sees. The blue tape is found using a color mask, and the centroid of it is drawn in the image. The green tape is found using another color mask. Once these two colors are detected, a line is drawn from the centroid of the blue tape to the centroid of the green tape.\
+The image below depicts what the camera sees. The blue tape is found using a color mask, and the centroid of it is drawn in the image. The green tape is found using another color mask. Once these two colors are detected, a line is drawn from the centroid of the blue tape to the centroid of the green tape.
+
 ![rviz]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/rviz.png)
