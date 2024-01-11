@@ -15,6 +15,8 @@ sidebar:
     url: /portfolio/botrista/#apriltags
   - section: "Handle Detection"
     url: /portfolio/botrista/#handle-detection
+  - section: "Pouring"
+    url: /portfolio/botrista/#pouring
 ---
 This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. It uses computer vision and AprilTags to detect where each object is and how to grasp the object, and it uses Moveit2 to plan the trajectories.
 
@@ -61,3 +63,21 @@ When picking up an object, the robot arm will first move above the AprilTag asso
 The image below depicts what the camera sees. The blue tape is found using a color mask, and the centroid of it is drawn in the image. The green tape is found using another color mask. Once these two colors are detected, a line is drawn from the centroid of the blue tape to the centroid of the green tape.
 
 ![rviz]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/rviz.png)
+
+
+## Pouring
+Two pouring actions were needed: one for the kettle, and one for the coffee pot. Different actions were used because we wanted the pouring motion to be difficult. However, both actions had an approach pose, which was used to move the kettle/pot to an appropriate position, and a pour pose, which tilted the object to an angle that would start the pour.
+
+When brewing a cup of pour over coffee, a spiral motion is ideal. To achieve this, we did the following:
+1. Create transformations
+  * Robot end-effector to kettle spout
+  * Center of the coffee pot to the handle
+2. Create a set of waypoints that represent the spiral
+3. Apply the transformations to get a list of waypoints that the end-effector needs to follow in order to achieve the desired path
+4. Plan the cartesian path.
+
+Although we don't need to pour the coffee from the pot using a spiral motion, we did need to increase the angle of the pour. The coffee pot has an hourglass shape. In order to pour all the coffee out, without it spilling out, we did two pours:
+1. Pour at 90 degrees
+2. Continue and tilt the pot more
+
+![Second pour angle]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/pour2.png)
