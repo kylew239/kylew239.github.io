@@ -52,7 +52,7 @@ AprilTags were used for localization. A camera was mounted on the ceiling so tha
   - These were placed on acrylic plates that the objects were mounted/attached to
   - These allowed the robot to see the general location of each object
 
-![April Tags]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/aprilTags.jpg)
+![April Tags]({{ site.url }}{{ site.baseurl }}/assets/images/botrista/aprilTags.jpg)
 
 
 ## Handle Detection
@@ -62,7 +62,7 @@ When picking up an object, the robot arm will first move above the AprilTag asso
 
 The image below depicts what the camera sees. The blue tape is found using a color mask, and the centroid of it is drawn in the image. The green tape is found using another color mask. Once these two colors are detected, a line is drawn from the centroid of the blue tape to the centroid of the green tape.
 
-![rviz]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/rviz.png)
+![rviz]({{ site.url }}{{ site.baseurl }}/assets/images/botrista/rviz.png)
 
 
 ## Pouring
@@ -80,4 +80,4 @@ Although we don't need to pour the coffee from the pot using a spiral motion, we
 1. Pour at 90 degrees
 2. Continue and tilt the pot more
 
-![Second pour angle]({{ site.url }}{{ site.baseurl }}/assets/images//botrista/pour2.png)
+![Second pour angle]({{ site.url }}{{ site.baseurl }}/assets/images/botrista/pour2.png)
