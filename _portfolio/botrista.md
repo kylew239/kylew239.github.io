@@ -18,11 +18,15 @@ sidebar:
   - section: "Pouring"
     url: /portfolio/botrista/#pouring
 ---
-This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. It uses computer vision and AprilTags to detect where each object is and how to grasp the object, and it uses Moveit2 to plan the trajectories.
+This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. It uses computer vision and AprilTags to detect where each object is and how to grasp the object, and it uses Moveit2 to plan the trajectories. This project was completed over a course of 3 weeks.
 
 Source code: [GitHub](https://github.com/kylew239/Botrista-Robotic-Coffee-Maker)\
 Moveit2 Wrapper: [GitHub](https://github.com/kylew239/Moveit2-Wrapper)\
-Group Members: Stephen Ferro, Carter DiOrio, Anuj Natraj, Kyle Wang, Jihai Zhao
+Group Members: 
+* Stephen Ferro [Portfolio]()
+* Carter DiOrio [Portfolio](www.cdiorio.dev)
+* Anuj Natraj [Portfolio]()
+* Jihai Zhao [Portfolio]()
 
 ## Video Demo
 <iframe width="897" height="505" src="https://www.youtube.com/embed/INRJ8Y_SD4U" title="Making Coffee with a Robot Arm: Botrista" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
