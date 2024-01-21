@@ -6,7 +6,7 @@ excerpt: "Trajectory planning, Object manipulation, ROS2, Moveit, OpenCV"
 header:
   teaser: /assets/gifs/botrista.gif
 sidebar:
-  - title: "Page Navigation"
+  - title: "Table of Contents"
   - section: "Video Demo"
     url: /portfolio/botrista/#video-demo
   - section: "Moveit Wrapper"
