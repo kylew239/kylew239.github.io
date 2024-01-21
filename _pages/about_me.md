@@ -45,7 +45,7 @@ gallery_ftc:
     alt: "Robot 2018-19"
     title: "Robot 2018-19"
 ---
-I am a current M.S Robotics student at Northwetsern University. I graduated from Case Western Reserve University in 2023 with a Bachelor's Degree in Electrical Engineering. My interest in robotics started in high school, when I participated in the FIRST Tech Challenge Robotics Competition. I spent my undergraduate career taking robotics-related courses while participating in CWRU robotics teams. After that, I decided to pursue a Master's degree in Robotics to learn more about the industry and develop my skills. Some of my current robotics interests include swarms, prosthetics, and drones. I am currently seeking summer internships and full-time positions in robotics, and I'm excited to enter the industry and explore robotics projects.
+I am a current M.S. Robotics student at Northwetsern University. I graduated from Case Western Reserve University in 2023 with a Bachelor's Degree in Electrical Engineering. My interest in robotics started in high school, when I participated in the FIRST Tech Challenge Robotics Competition. I spent my undergraduate career taking robotics-related courses while participating in CWRU robotics teams. After that, I decided to pursue a Master's degree in Robotics to learn more about the industry and develop my skills. Some of my current robotics interests include swarms, prosthetics, and drones. I am currently seeking summer internships and full-time positions in robotics, and I'm excited to enter the industry and explore robotics projects.
 
 ## Prior Robotics Experiences
 ### CWRU Robotics Team
