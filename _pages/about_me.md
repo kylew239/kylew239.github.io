@@ -7,10 +7,6 @@ sidebar:
   - title: "Page Navigation"
   - section: "Prior Robotics Experiences"
     url: /about_me/#prior-robotics-experiences
-  - text: "CWRU Robotics Team"
-    url: /about_me/#cwru-robotics-team
-  - text: "First Tech Challenge"
-    url: /about_me/#first-tech-challenge-team-11697
   - section: "Employment and Professional Experiences"
     url: /about_me/#employment-and-professional-experiences
   - section: "Education"

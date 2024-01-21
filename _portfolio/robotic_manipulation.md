@@ -41,7 +41,7 @@ The trajectory is composed of 8 parts:
 7. Open the gripper
 8. Move the gripper back to the “standoff” configuration
 
-These 8 trajectories were generated using the [Modern Robotics Library](https://github.com/NxRLab/ModernRobotics), specifically the ScrewTrajectory() function. 
+These 8 trajectories were generated using the Modern Robotics Library [1], specifically the ScrewTrajectory() function. 
 
 
 ## Custom Classes
@@ -70,7 +70,7 @@ The kinematics of the robot were calculated using by using a first order euler-s
 
 This function returns the next robot state.
 
-To calculate the new position of the robot, I used the following equation 13.10 [1]:
+To calculate the new position of the robot, I used the following equation 13.10 [2]:
 
 ![mecanum]({{ site.url }}{{ site.baseurl }}/assets/images/449/mecanum_model.png)
 
@@ -84,10 +84,11 @@ Where:
 
 
 ## Feedforward Control
-Feedforwad control was achieved by using the current end-effector configuration as a function of the current chassis configuration and arm configuraiton. These values come directly from the simulation, so we assume perfect sensors and data. The control law, obtained from equation 13.37 [1], outputs the commanded end-effector twist, which is then converted into wheel and arm joint velocities
+Feedforwad control was achieved by using the current end-effector configuration as a function of the current chassis configuration and arm configuraiton. These values come directly from the simulation, so we assume perfect sensors and data. The control law, obtained from equation 13.37 [2], outputs the commanded end-effector twist, which is then converted into wheel and arm joint velocities
 
 ![mecanum]({{ site.url }}{{ site.baseurl }}/assets/images/449/control.png)
 
 
 ## Sources
-* [1]. "Modern Robotics: Mechanics, Planning, and Control" by Kevin Lynch and Frank Park
+* [1]. Modern Robotics Library, [GitHub](https://github.com/NxRLab/ModernRobotics)
+* [2]. "Modern Robotics: Mechanics, Planning, and Control" by Kevin Lynch and Frank Park
