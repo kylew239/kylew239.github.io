@@ -6,7 +6,7 @@ excerpt: "Lagrangian Dynamics, Python"
 header:
   teaser: /assets/gifs/314.gif
 sidebar:
-  - title: "Page Navigation"
+  - title: "Table of Contents"
   - section: "Video Demo"
     url: /portfolio/dynamics/#video-demo
   - section: "Overview"
