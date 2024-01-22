@@ -4,7 +4,7 @@ title: "About me"
 toc: false
 classes: wide
 sidebar:
-  - title: "Page Navigation"
+  - title: "Table of Contents"
   - section: "Prior Robotics Experiences"
     url: /about_me/#prior-robotics-experiences
   - section: "Employment and Professional Experiences"

@@ -6,7 +6,7 @@ excerpt: "Mobile Manipulation, Trajectory Planning, Feedforward Control, Python"
 header:
   teaser: /assets/gifs/449.gif
 sidebar:
-  - title: "Page Navigation"
+  - title: "Table of Contents"
   - section: "Video Demo"
     url: /portfolio/robotic_manipulation/#video-demo
   - section: "Trajectory Planning"
