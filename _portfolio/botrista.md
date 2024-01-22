@@ -22,7 +22,7 @@ This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. 
 
 Source code: [GitHub](https://github.com/kylew239/Botrista-Robotic-Coffee-Maker)\
 Moveit2 Wrapper: [GitHub](https://github.com/kylew239/Moveit2-Wrapper)\
-Group Members: [Stephen Ferro](scferro.github.io), [Carter DiOrio](www.cdiorio.dev), [Anuj Natraj](https://anujn9.github.io/), [Jihai Zhao](https://jihaizhao.github.io/)
+Group Members: [Stephen Ferro](https://scferro.github.io), [Carter DiOrio](https://www.cdiorio.dev), [Anuj Natraj](https://anujn9.github.io/), [Jihai Zhao](https://jihaizhao.github.io/)
 
 ## Video Demo
 <iframe width="897" height="505" src="https://www.youtube.com/embed/INRJ8Y_SD4U" title="Making Coffee with a Robot Arm: Botrista" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
