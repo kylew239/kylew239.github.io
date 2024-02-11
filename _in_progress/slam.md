@@ -19,7 +19,7 @@ sidebar:
 # This project is currently in progress
 This project involves building an Extended Kalman Filter Simultaneous Localization and Mapping (EKF-SLAM) Algorithm from scratch. This algorithm was then implemented on a Turtlebot3 and tested with cylindrical obstacles
 
-Source code: [GitHub](https://github.com/ME495-Navigation/EKF-SLAM)
+Source code: [GitHub](https://github.com/kylew239/EKF-SLAM)
 
 <!-- ## Video Demo -->
 
