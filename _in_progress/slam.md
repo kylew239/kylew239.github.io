@@ -11,8 +11,12 @@ sidebar:
   #   url: /portfolio/botrista/#video-demo
   - section: "Kinematics"
     url: /portfolio/slam/#kinematics
-  - section: "Simultion"
+  - section: "Simulation"
     url: /portfolio/slam/#simulation
+  - section: "Robot Control"
+    url: /portfolio/slam/#robot-control
+  # - section: "Simulation"
+  #   url: /portfolio/slam/#simulation
 
 ---
 
@@ -31,6 +35,12 @@ The kinematics library for this projected was developed in C++, and handles calc
 - svg - Creates SVG drawings from points, vectors, and coordinate frames
 
 ## Simulation
-A custom simulation environment was designed by using RVIZ. This is handled via a ROS2 Node that simulates robot position and obstacles.
+A custom simulation environment was designed by using RVIZ. This is handled via a ROS2 Node that simulates robot position and obstacles. This node simulates the following:
+* Robot position (with noise and slippage)
+* Lidar sensor data (with noise)
+* Obstacle collisions
 
 ![simulation]({{ site.url }}{{ site.baseurl }}/assets/images/slam/nusim.png)
+
+
+## Robot Control
