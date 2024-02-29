@@ -35,12 +35,16 @@ The kinematics library for this projected was developed in C++, and handles calc
 - svg - Creates SVG drawings from points, vectors, and coordinate frames
 
 ## Simulation
-A custom simulation environment was designed by using RVIZ. This is handled via a ROS2 Node that simulates robot position and obstacles. This node simulates the following:
+A custom simulation environment was designed by using RVIZ. This is handled via a ROS2 Node that simulates robot position and obstacles. The red figure represents the "real" position of the robot. This node simulates the following:
 * Robot position (with noise and slippage)
 * Lidar sensor data (with noise)
 * Obstacle collisions
 
 ![simulation]({{ site.url }}{{ site.baseurl }}/assets/images/slam/nusim.png)
 
-
 ## Robot Control
+The robot is controlled by converting incoming `Twist` messages to wheel commands which directly control the robot wheels. This is done using the custom kinematics library. The odometry of the robot is calculated using the published `JointState` messages along with the same kinematics library. The odometry of the robot can be visualized in the simulation environment - it is represented by the blue figure. 
+
+In the simulation, with perfect odometry, the blue figure lines up with the red figure, since the odometry would perfectly calculate the position of the robot. When there is noise, wheel slippage, or collisions, the blue figure would not line up with the actual position.
+
+<!-- TODO: Insert image after collision to show that red and blue don't line up. -->
