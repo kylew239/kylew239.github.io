@@ -25,7 +25,8 @@ This project involves building an Extended Kalman Filter Simultaneous Localizati
 
 Source code: [GitHub](https://github.com/kylew239/EKF-SLAM)
 
-<!-- ## Video Demo -->
+## Video Demo - Robot Control and Odometry
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5keYhW2SjbE?si=aKHY1msCLidczQi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Kinematics
@@ -45,6 +46,8 @@ A custom simulation environment was designed by using RVIZ. This is handled via 
 ## Robot Control
 The robot is controlled by converting incoming `Twist` messages to wheel commands which directly control the robot wheels. This is done using the custom kinematics library. The odometry of the robot is calculated using the published `JointState` messages along with the same kinematics library. The odometry of the robot can be visualized in the simulation environment - it is represented by the blue figure. 
 
-In the simulation, with perfect odometry, the blue figure lines up with the red figure, since the odometry would perfectly calculate the position of the robot. When there is noise, wheel slippage, or collisions, the blue figure would not line up with the actual position.
 
-<!-- TODO: Insert image after collision to show that red and blue don't line up. -->
+## Extended Kalman Filter SLAM
+This feature is currently a work in progress.
+
+The SLAM pipeline for this project involves two main inputs: wheel encoders and a 2D LiDAR. The SLAM algorithm calculates the odometry of the robot using features detected by the LiDAR.
