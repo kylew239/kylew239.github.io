@@ -66,4 +66,4 @@ The drone is commanded to navigate through the generated waypoints. In order for
 * The LED is turned on when the drone's position lies on the line formed by the previous waypoint and the next waypoint
 
 This video demo uses the same tree example from earlier, with the LED controller using the first method and a radius of 3cm.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KncndY0iRys?si=PgkkOdbP1P0iecQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ruHbgud3S4g?si=n_Qlzbt_qk-Qytv6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
