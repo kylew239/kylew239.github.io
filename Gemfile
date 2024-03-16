@@ -5,6 +5,7 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-remote-theme"
+gem 'jekyll-redirect-from'
 
 group :jekyll_plugins do
 end

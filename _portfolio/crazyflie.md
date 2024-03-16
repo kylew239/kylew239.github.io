@@ -1,12 +1,7 @@
 ---
 title: "Drone Swarm Light Painting"
-author_profile: false
+author_profile: true
 key: 6
-
-# Makes this hidden on the main site, and redirects to the main
-hidden: true
-redirect_to: /portfolio/crazyflie
-
 excerpt: "Path planning, Swarm, ROS2, Drones"
 header:
   teaser: /assets/images/crazyflie/crazyflie.jpeg

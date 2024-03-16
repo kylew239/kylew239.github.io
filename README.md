@@ -13,3 +13,9 @@ To disable:
 To enable:
 1. Move markdown files over into the `_in_progress` folder
 2. Go to `_layouts/collection.html` and uncomment out the instructed portions
+
+
+# Add new plugins
+1. Add to `Gemfile`
+2. Run `bundle install`
+3. Add plugin into the plugins section in `_config.yml`
