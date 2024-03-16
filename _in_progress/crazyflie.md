@@ -76,7 +76,7 @@ This video demo uses the same tree example from earlier, with the LED controller
 
 
 ## Verification
-In order to ensure that the drone was flying the correct path, I used OpenCV to help trace the path of the drone. The code for this is in `light_painting/script/visualize.py`. This script was used in both demo videos to help visualize the paths flown.
+In order to ensure that the drone was flying the correct path, I used OpenCV to help trace the path of the drone in `light_painting/script/visualize.py` This script was used in both demo videos to help visualize the paths flown.
 
 This diagram shows the logic flow of this script.
 
