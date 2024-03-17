@@ -24,8 +24,12 @@ sidebar:
     url: /portfolio/crazyflie/#waypoint-generation
   - section: "Light Painting with One Drone"
     url: /portfolio/crazyflie/#light-painting-with-one-drone
+  - section: "Flight Path Verification"
+    url: /portfolio/crazyflie/#flight-path-verification
+  - section: "Light Painting with Multiple Drone"
+    url: /portfolio/crazyflie/#light-painting-with-mulitple-drone
 ---
-This project uses three Crazyflie Drones to create a long-exposure picture. The camera captures the light emitted by the on-board LEDs over the course of the drones trajectory to create images. 
+<!-- This project uses three Crazyflie Drones to create a long-exposure picture. The camera captures the light emitted by the on-board LEDs over the course of the drones trajectory to create images. 
 
 Source code: [GitHub](https://github.com/kylew239/light-painting-swarm)\
 Project Timeframe: 1/03/24 - 3/16/24
@@ -36,7 +40,7 @@ Project Timeframe: 1/03/24 - 3/16/24
 ## System Overview
 ![Block Diagram]({{ site.url }}{{ site.baseurl }}/assets/images/crazyflie/SystemDiagram.png)
 
-This project utilizes mutliple ROS nodes interfacing with the various hardware and the Crazyflie server ([Crazyswarm2 Package](https://imrclab.github.io/crazyswarm2/)). I created various nodes based on the difference functionalities needed, such as camera control, trajectory generation, and drone control.
+This project interfaces multiple ROS nodes with the Crazyflies, camera, and Crazyflie Server. ([Crazyswarm2 Package](https://imrclab.github.io/crazyswarm2/)). These nodes were responsible for shutter control, trajectory generation, and drone control.
 
 
 ## Hardware
@@ -75,14 +79,14 @@ This video demo uses the same tree example from earlier, with the LED controller
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ruHbgud3S4g?si=n_Qlzbt_qk-Qytv6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-## Verification
+## Flight Path Verification
 In order to ensure that the drone was flying the correct path, I used OpenCV to help trace the path of the drone in `light_painting/script/visualize.py` This script was used in both demo videos to help visualize the paths flown.
 
 This diagram shows the logic flow of this script.
 
 ![visualize]({{ site.url }}{{ site.baseurl }}/assets/images/crazyflie/visualize.png)
 
-## Light Paiting with Mulitple Drones
+## Light Paiting with Multiple Drones
 I modified the ROS2 nodes so that multiple drones can be added by just changing the launch file and the `config.yaml` file. For the video demo at the top of this page, the following changes were made:
 * The URI's of the additional drones were added to the `light_painting/config/config.yaml` file
-* I created the `light_painting/launc/light_paint_three.launch.py` file by duplicating the `flight` and `led` nodes multiple times, with different names and colors for each drone
+* I created the `light_painting/launc/light_paint_three.launch.py` file by duplicating the `flight` and `led` nodes multiple times, with different names and colors for each drone -->
