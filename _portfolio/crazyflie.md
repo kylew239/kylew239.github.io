@@ -21,8 +21,8 @@ sidebar:
     url: /portfolio/crazyflie/#light-painting-with-one-drone
   - section: "Flight Path Verification"
     url: /portfolio/crazyflie/#flight-path-verification
-  - section: "Light Painting with Multiple Drone"
-    url: /portfolio/crazyflie/#light-painting-with-mulitple-drone
+  - section: "Light Painting with Multiple Drones"
+    url: /portfolio/crazyflie/#light-painting-with-multiple-drones
 ---
 This project uses three Crazyflie Drones to create a long-exposure picture. The camera captures the light emitted by the on-board LEDs over the course of the drones trajectory to create images. 
 
@@ -81,7 +81,7 @@ This diagram shows the logic flow of this script.
 
 ![visualize]({{ site.url }}{{ site.baseurl }}/assets/images/crazyflie/visualize.png)
 
-## Light Paiting with Multiple Drones
+## Light Painting with Multiple Drones
 I modified the ROS2 nodes so that multiple drones can be added by just changing the launch file and the `config.yaml` file. For the video demo at the top of this page, the following changes were made:
 * The URI's of the additional drones were added to the `light_painting/config/config.yaml` file
 * I created the `light_painting/launc/light_paint_three.launch.py` file by duplicating the `flight` and `led` nodes multiple times, with different names and colors for each drone
