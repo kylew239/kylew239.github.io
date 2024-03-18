@@ -4,7 +4,7 @@ author_profile: true
 key: 6
 excerpt: "Path planning, Swarm, ROS2, Drones"
 header:
-  teaser: /assets/images/crazyflie/crazyflie.jpeg
+  teaser: /assets/gifs/crazyflie.gif
 sidebar:
   - title: "Table of Contents"
   - section: "Video Demo"
@@ -40,11 +40,11 @@ This project interfaces multiple ROS nodes with the Crazyflies, camera, and Craz
 
 ## Hardware
 The following hardware was used in this project:
-* Crazyflie 2.1
-* CrazyRadio 2.0
-* Lighthouse positioning system
-* Sony A6400 DSLR Camera
-* Arduino Uno
+* Crazyflie 2.1: The drone
+* CrazyRadio 2.0: Radio responsible for communication with the drones
+* Lighthouse positioning system: Optical positioning system with sub-millimeter precision
+* Sony A6400: DSLR Camera for Long Exposure Photography
+* Arduino Uno: Controls the DSLR Camera
 
 ## Camera Control
 The Sony A6400 DSLR Camera has the Sony Multi-purpose Interface port. This port allows us to control the camera. By using a 2.5mm to Multi-purpose Interface adapter, we can control the camera's shutter by shorting the tip, ring, and sleeve of the 2.5mm cable. The connections are shown in the schematic below. Pulling the Arduino pin low starts the shutter, while pulling the pin high releases the shutter. This camera supports bulb exposure mode, so the long-exposure shot length can be controlled to match the flight time.
