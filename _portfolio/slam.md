@@ -1,13 +1,8 @@
 ---
 title: "EKF SLAM"
 author_profile: true
-key: 0
+key: 5
 excerpt: "Extended Kalman Filter, Localization, C++"
-
-# Makes this hidden on the main site, and redirects to the main
-hidden: true
-redirect_to: /portfolio/slam
-
 header:
   teaser: /assets/images/slam/turtlebot.jpeg
 sidebar:
@@ -26,7 +21,7 @@ sidebar:
     url: /portfolio/slam/#performance-in-simulation
 
 ---
-<!-- This project involves building an Extended Kalman Filter Simultaneous Localization and Mapping (EKF-SLAM) Algorithm from scratch. This algorithm was then implemented on a TurtleBot3 and tested with cylindrical obstacles. This project was completed using ROS2 Iron and C++.
+This project involves building an Extended Kalman Filter Simultaneous Localization and Mapping (EKF-SLAM) Algorithm from scratch. This algorithm was then implemented on a TurtleBot3 and tested with cylindrical obstacles. This project was completed using ROS2 Iron and C++.
 
 Source code: [GitHub](https://github.com/kylew239/EKF-SLAM)\
 Project Timeframe: 1/03/24 - 3/16/24
@@ -50,14 +45,23 @@ A custom simulation environment was designed by using RVIZ. This is handled via 
 ![simulation]({{ site.url }}{{ site.baseurl }}/assets/images/slam/nusim.png)
 
 ## Robot Control
-The robot is controlled by converting incoming `Twist` messages to wheel commands which directly control the robot wheels. This is done using the custom kinematics library. The odometry of the robot is calculated using the published `JointState` messages along with the same kinematics library. The odometry of the robot can be visualized in the simulation environment - it is represented by the blue figure. 
+The robot is controlled by converting incoming `Twist` messages to wheel commands which directly control the robot wheels. This is done using the custom kinematics library.
+
+The odometry of the robot is calculated using the published `JointState` messages along with the same kinematics library. This calculation uses the forward kinematics of a standard differential drive robot. The odometry of the robot can be visualized in the simulation environment - it is represented by the blue figure.
 
 
 ## Extended Kalman Filter SLAM
-This feature is currently a work in progress.
+Feature-based Extended Kalman Filter SLAM is performed to provide accurate odometry. This algorithim uses two sources of data: Odometry calculations and Fake Sensor Data. In the demo video, the odometry data is calculated without sensor noise, to clearly show how odometry data is affected by collisions. Collisions also simulate how the real robot would drift over time - odometry data would slowly become less accurate.
 
-The SLAM pipeline for this project involves two main inputs: wheel encoders and a 2D LiDAR. The SLAM algorithm calculates the odometry of the robot using features detected by the LiDAR.
+The Fake Sensor Data represents the data that the LiDAR would output after going through Landmark Detection and Data Association algorithms. The raw LiDAR data is represented by the red dots in the demo video.
 
+EKF SLAM is performed in two main steps:
+1. Prediction
+  * Differences in odometry between timesteps are used to predict position
+  * Inaccurate due to odometry (slipping, noise, drifting over time)
+2. Correction
+  * Kalman Gains are calculated by looking at landmark locations
+  * Robot state is updated using this information
 
 ## Performance In Simulation
 Ground Truth:
@@ -83,4 +87,4 @@ y: 0.024
 
 Odomotery data had a positional error of 0.289m and no rotational error. Given that collisions were programmed with no rotational component, this data makes sense. The odometry data, with no sensor noise and no rotational collisions, is off linearly but is perfect in terms of the angular position
 
-EKF-SLAM data had a positional error of 0.001 m and a rotational error of 0.02 deg. This data is calculated from both LiDAR and odometry data, so it should be relatively accurate. As expected, EKF-SLAM greatly outperforms odometry data, especially when collisions are involved. -->
+EKF-SLAM data had a positional error of 0.001 m and a rotational error of 0.02 deg. This data is calculated from both LiDAR and odometry data, so it should be relatively accurate. As expected, EKF-SLAM greatly outperforms odometry data, especially when collisions are involved.
