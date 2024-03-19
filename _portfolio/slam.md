@@ -4,7 +4,7 @@ author_profile: true
 key: 5
 excerpt: "Extended Kalman Filter, Localization, C++"
 header:
-  teaser: /assets/images/slam/turtlebot.jpeg
+  teaser: /assets/gifs/slam.gif
 sidebar:
   - title: "Table of Contents"
   - section: "Video Demo"
