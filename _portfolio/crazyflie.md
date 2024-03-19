@@ -30,7 +30,7 @@ Source code: [GitHub](https://github.com/kylew239/light-painting-swarm)\
 Project Timeframe: 1/03/24 - 3/16/24
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5BwGz8YEaAI?si=sskMhT_36BU6RhR3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ww7sDnqF3a0?si=ehcX_rwx6OKvxZt9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## System Overview
 ![Block Diagram]({{ site.url }}{{ site.baseurl }}/assets/images/crazyflie/SystemDiagram.png)
