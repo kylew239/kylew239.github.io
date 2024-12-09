@@ -239,12 +239,17 @@
   }
 
   .archive__item-teaser {
+
     @include breakpoint($small) {
-      max-height: 200px;
+      max-height: 180px;
     }
 
     @include breakpoint($medium) {
-      max-height: 170px;
+      max-height: 360px;
+    }
+
+    @include breakpoint($large) {
+      max-height: 360px;
     }
   }
 }

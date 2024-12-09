@@ -20,9 +20,9 @@ sidebar:
 ---
 This project uses the Franka Emika Panda arm to brew a cup of pour over coffee. It uses computer vision and AprilTags to detect where each object is and how to grasp the object, and it uses Moveit2 to plan the trajectories. This project was completed over a course of 3 weeks.
 
-Source code: [GitHub](https://github.com/kylew239/Robotic-Coffee-Maker)\
-Moveit2 Wrapper: [GitHub](https://github.com/kylew239/Moveit2-Wrapper)\
-Group Members: [Stephen Ferro](https://scferro.github.io), [Carter DiOrio](https://www.cdiorio.dev), [Anuj Natraj](https://anujn9.github.io/), [Kyle Wang](https://kylew239.github.io/) [Jihai Zhao](https://jihaizhao.github.io/)
+Source code: [GitHub](https://github.com/kylew239/Robotic-Coffee-Maker){:target="_blank"}\
+Moveit2 Wrapper: [GitHub](https://github.com/kylew239/Moveit2-Wrapper){:target="_blank"}\
+Group Members: [Stephen Ferro](https://scferro.github.io){:target="_blank"}, [Carter DiOrio](https://www.cdiorio.dev){:target="_blank"}, [Anuj Natraj](https://anujn9.github.io/){:target="_blank"}, [Kyle Wang](https://kylew239.github.io/){:target="_blank"}, [Jihai Zhao](https://jihaizhao.github.io/){:target="_blank"}
 
 ## Video Demo
 <iframe width="897" height="505" src="https://www.youtube.com/embed/INRJ8Y_SD4U" title="Making Coffee with a Robot Arm: Botrista" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

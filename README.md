@@ -19,3 +19,6 @@ To enable:
 1. Add to `Gemfile`
 2. Run `bundle install`
 3. Add plugin into the plugins section in `_config.yml`
+
+# Resize GIFS
+Use 360x240

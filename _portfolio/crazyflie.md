@@ -26,8 +26,7 @@ sidebar:
 ---
 This project uses three Crazyflie Drones to create a long-exposure picture. The camera captures the light emitted by the on-board LEDs over the course of the drones trajectory to create images. 
 
-Source code: [GitHub](https://github.com/kylew239/light-painting-swarm)\
-Project Timeframe: 1/03/24 - 3/16/24
+Source code: [GitHub](https://github.com/kylew239/light-painting-swarm){:target="_blank"}
 
 ## Video Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ww7sDnqF3a0?si=ehcX_rwx6OKvxZt9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -35,7 +34,7 @@ Project Timeframe: 1/03/24 - 3/16/24
 ## System Overview
 ![Block Diagram]({{ site.url }}{{ site.baseurl }}/assets/images/crazyflie/SystemDiagram.png)
 
-This project interfaces multiple ROS nodes with the Crazyflies, camera, and Crazyflie Server. ([Crazyswarm2 Package](https://imrclab.github.io/crazyswarm2/)). These nodes were responsible for shutter control, trajectory generation, and drone control.
+This project interfaces multiple ROS nodes with the Crazyflies, camera, and Crazyflie Server. ([Crazyswarm2 Package](https://imrclab.github.io/crazyswarm2/){:target="_blank"}). These nodes were responsible for shutter control, trajectory generation, and drone control.
 
 
 ## Hardware

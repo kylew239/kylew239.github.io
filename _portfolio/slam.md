@@ -2,7 +2,7 @@
 title: "EKF SLAM"
 author_profile: true
 key: 5
-excerpt: "Extended Kalman Filter, Localization, C++"
+excerpt: "Extended Kalman Filter, SLAM, C++, ROS2"
 header:
   teaser: /assets/gifs/slam.gif
 sidebar:
@@ -23,8 +23,7 @@ sidebar:
 ---
 This project involves building an Extended Kalman Filter Simultaneous Localization and Mapping (EKF-SLAM) Algorithm from scratch. This algorithm was then implemented on a TurtleBot3 and tested with cylindrical obstacles. This project was completed using ROS2 Iron and C++.
 
-Source code: [GitHub](https://github.com/kylew239/EKF-SLAM)\
-Project Timeframe: 1/03/24 - 3/16/24
+Source code: [GitHub](https://github.com/kylew239/EKF-SLAM){:target="_blank"}
 
 ## Video Demo - EKF-SLAM in Simulation
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NvknFuvAxmg?si=F2ZKNfARoSRp7CFR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

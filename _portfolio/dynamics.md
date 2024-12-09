@@ -16,7 +16,7 @@ sidebar:
 ---
 This was the final project of Northwestern University's ME314 Machine Dynamics class, and focused on Lagrangian dynamics in rigid body systems. This project analyzes Lagrangian dynamics including external forces, constraints, and impacts, and was developed using the Sympy, Numpy, and Plotly packages in Python. I chose to model a dice bouncing around in a box. Both objects experience external forces (gravity), impacts, contstraints.
 
-Source code: [Google Collab](https://colab.research.google.com/drive/1snZVWA5oejmxH6SrX3FftF-sq9AY6mWj?usp=sharing)
+Source code: [Google Collab](https://colab.research.google.com/drive/1snZVWA5oejmxH6SrX3FftF-sq9AY6mWj?usp=sharing){:target="_blank"}
 
 ## Video Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ccNL8UuHANM?si=e_yVHLBQWFfK-8kY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
