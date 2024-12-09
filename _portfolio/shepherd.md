@@ -33,8 +33,13 @@ GitHub: [Diffusion Policy](https://github.com/kylew239/diffusion_policy){:target
 ## Video Demo
 
 ## Shepherding and Diffusion Policy
-The 
-Diffusion Policy is a machine learning model used for generating robot action sequences based on a dataset of human demonstrations.
+Robotic shepherding involves using robots to guide a group of animals, such as livestock, towards a designated target. The challenge lies in coordinating multiple animals in a dynamic environment, where each animal's behavior can be unpredictable. While a traditional algorithmic approach can work, it can struggle with unpredictable behavior and random starting environments. However, for shepherding dogs (and humans, to some extent), this problem is easily solved with intuition. 
+
+This is where diffusion policy comes into play. By sampling a distribution of human data, diffusion policy can generate actions and behaviors based off of human intuition. By manually herding sheep from different initial conditions, we can build a generalized shepherding model that mimics human intuition to successfully herd the sheep.
+
+![24 paths]({{ site.url }}{{ site.baseurl }}/assets/images/shepherd/24.png)
+
+This picture displays 24 shepherding trials. Each trial has the same initial goal and sheep positions, with slightly varying shepherd positions. A diffusion policy model trained on this image  would attempt to herd the sheep by following one of the paths.
 
 
 ## Pygame Simulation
