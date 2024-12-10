@@ -11,17 +11,17 @@ sidebar:
   - section: "Video Demo"
     url: /portfolio/shepherd/#video-demo
   - section: "Shepherding and Diffusion Policy"
-    url: /portfolio/shepherd/#Shepherding-and-Diffusion-Policy
+    url: /portfolio/shepherd/#shepherding-and-diffusion-policy
   - section: "Pygame Simulation"
-    url: /portfolio/shepherd/#Pygame-Simulation
+    url: /portfolio/shepherd/#pygame-simulation
   - section: "Inputs and Observations"
-    url: /portfolio/shepherd/#Inputs-and-Observations
+    url: /portfolio/shepherd/#inputs-and-observations
   - section: "Training Analysis"
-    url: /portfolio/shepherd/#Training-Analysis
+    url: /portfolio/shepherd/#training-analysis
   - section: "Limitations and Future Work"
-    url: /portfolio/shepherd/#Limitations-and-Future-Work
+    url: /portfolio/shepherd/#limitations-and-future-work
   - section: "References"
-    url: /portfolio/shepherd/#References
+    url: /portfolio/shepherd/#references
 ---
 ## This page is still in progress
 
@@ -39,10 +39,19 @@ This is where diffusion policy comes into play. By sampling a distribution of hu
 
 ![24 paths]({{ site.url }}{{ site.baseurl }}/assets/images/shepherd/24.png)
 
-This picture displays 24 shepherding trials. Each trial has the same initial goal and sheep positions, with slightly varying shepherd positions. A diffusion policy model trained on this image  would attempt to herd the sheep by following one of the paths.
+This picture displays 24 shepherding trials. Each trial has the same initial goal and sheep positions, with slightly varying shepherd positions. A diffusion policy model trained on this image  would attempt to herd the sheep by following the red path. However, the model would fail to herd sheep with different initial positions, since there is no data for that. To create a generalized model, I would also need to use data with varying initial sheep positions.
 
 
 ## Pygame Simulation
+In order to collect data to train the model, and to evaluate the model, I needed a simulation environment. I decided to use PyGame since it satisfies following requirements:
+- Easy to modify
+- Allows user input (keyboard or controller)
+- Can save the data (Using CSV files and images)
+- Has easily tunable parameters
+- Can display the game state visually
+
+I used the [Strombom Model](https://royalsocietypublishing.org/doi/10.1098/rsif.2014.0719){:target="_blank"} to control the sheep. Most of the parameters are the same as the ones described in the paper, but I changed some to make herding easier. The resulting pygame window is shown below. The game uses extremely simply graphics, with each object represented by a circle. The sheep and shepherd have their headings represented by a triangle.
+![pygame]({{ site.url }}{{ site.baseurl }}/assets/images/shepherd/pygame.png)
 
 ## Inputs and Observations
 
@@ -55,4 +64,4 @@ This picture displays 24 shepherding trials. Each trial has the same initial goa
 [Strombom Model](https://royalsocietypublishing.org/doi/10.1098/rsif.2014.0719){:target="_blank"}\
 [Nick Morales Diffusion Policy repository](https://github.com/ngmor/diffusion_policy/tree/main)
 
-Thanks to Matt Elwin, Lin Liu, Ishani Narwankar, Abhishek Sankar, and Courtney Smith for guidance and collaboration in this project
+Thanks to Matt Elwin, Lin Liu, Abhishek Sankar, Ishani Narwankar, and Courtney Smith for guidance and collaboration in this project
