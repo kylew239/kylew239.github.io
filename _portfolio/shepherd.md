@@ -18,19 +18,21 @@ sidebar:
     url: /portfolio/shepherd/#inputs-and-observations
   - section: "Training Analysis"
     url: /portfolio/shepherd/#training-analysis
+  - section: "Herding Varying Amounts of Sheep"
+    url: /portfolio/shepherd/#herding-various-amounts-of-sheep
   - section: "Limitations and Future Work"
     url: /portfolio/shepherd/#limitations-and-future-work
   - section: "References"
     url: /portfolio/shepherd/#references
 ---
-## This page is still in progress
-
 This project is focused on machine learning and aims to build a shepherding model based on human behavior. A simulation and data collection environment was built using pygame. Data was collected before being put into the training and evaluation pipeline. This project implements an [Action Diffusion](https://arxiv.org/abs/2303.04137){:target="_blank"} machine learning model.
 
 GitHub: [Shepherd Game](https://github.com/kylew239/Shepherd_game){:target="_blank"}\
 GitHub: [Diffusion Policy](https://github.com/kylew239/diffusion_policy){:target="_blank"}
 
 ## Video Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GCEtEboUnPM?si=JehurmH6saleAf_r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Shepherding and Diffusion Policy
 Robotic shepherding involves using robots to guide a group of animals, such as livestock, towards a designated target. The challenge lies in coordinating multiple animals in a dynamic environment, where each animal's behavior can be unpredictable. While a traditional algorithmic approach can work, it can struggle with unpredictable behavior and random starting environments. However, for shepherding dogs (and humans, to some extent), this problem is easily solved with intuition. 
@@ -81,8 +83,51 @@ Adding other information, especially information dependent on other variables, a
 
 
 ## Training Analysis
+I anaylized the trained models using training graphs from wandb and an evaluation tool that I built. The wandb graphs contained useful training metrics and allowed me to compare models:
+![wandb]({{ site.url }}{{ site.baseurl }}/assets/images/shepherd/wandb.png)
+
+These graphs compare 2 models that I trained - one with a CNN architecture (the image model from above) and the other with a transformer architecture (the lowdim non-image model from above). From the graphs, we can see that the transformer model has a relatively constant validation loss and a decreasing learning rate, while the unet (CNN architecture) had an increasing validation loss and a relatively constant learning rate. These two metrics hint that the transformer model has converged on a good solution and the model isn't improving as much. However, the unet model might be overfit or is learning from noisy data. These graphs are another indicator that training using image data is not a good choice.
+
+
+The evaluation tool I built does the following:
+1. Take in a `yaml` configuration file
+2. Evaulate the model as desbribed by the configuration file
+  - What model to use
+  - What parameters to use for the simulation environment
+  - How many times to run each model
+  - etc
+3. Temporarily save the evaluation
+4. Repeat steps 2-3 for each run specified in the config file
+5. Sitch all of the evaluations together for a side-by-side comparison
+6. Use OpenCV and draw the path that the shepherds take
+
+
+This is a comparison of a human and the model herding 100 sheep. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lvusPSEmUuQ?si=zNgcvE1deRPzWDOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## Herding Varying Amounts of Sheep
+The model was trained on 5 sheep, so it expects observations for 5 sheep. However, the model can still be scaled to work with more, or less, sheep. To get the model working with less sheep, we can pad the remaining observations by just repeating sheep positions
+![less sheep]({{ site.url }}{{ site.baseurl }}/assets/gifs/sheep_1_4.gif)
+
+
+The model can also be scaled to work with more sheep. This is done by dynamically targeting the 5 sheep that are furthest from the goal. As the model pushes in the 5 furthest sheep, it will also group and push any closer sheep in it's path. 
+![more sheep]({{ site.url }}{{ site.baseurl }}/assets/gifs/sheep_6_9.gif)
+
+![more sheep]({{ site.url }}{{ site.baseurl }}/assets/gifs/sheep_11_16.gif)
+
+
 
 ## Limitations and Future Work
+One of the limitations of this model is that it doesn't scale well to multiple shepherds. When two models are run at the same time, each on a different shepherd, the shepherds follow an extremely similar path. This is because both models have the same inputs and observations, and they both attempt to generate actions from the same datasets.
+![multiple_shepherd]({{ site.url }}{{ site.baseurl }}/assets/gifs/2_shepherd.gif)
+
+Future work can explore the possibility of using multiple models and shepherds. This might include:
+- Using multiple datasets
+- Using dynamic targeting so that each model targets different sheep
+
+Another potential future goal is to use two shepherd, one controlled by a human and one controlled by a model. This is currently limited by Python's multi-threading capabilities. The model and PyGame (display and controller inputs) both use multi-threading resources, which ends up crashing. 
+
 
 ## References
 [Diffusion Policy Paper](https://arxiv.org/abs/2303.04137){:target="_blank"}\
